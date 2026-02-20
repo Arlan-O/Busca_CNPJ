@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -7,12 +8,170 @@
     <meta name="description" content="Página para buscar informações de CNPJ.">
     <meta name="keywords" content="CNPJ, busca, empresa, informações">
     <meta name="author" content="Arlan Oliveira">
-    <title>Buscar CNPJ</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Comprovante de Inscrição e Situação Cadastral</title>
 </head>
 <body>
+
     <header>
-        <h1>Buscar Informações de CNPJ</h1>
-        
+        <div class="topo-sistema">
+            <img src="assets/Img/LOGO_REDE_SIM.png" alt="Logo Redesim">
+            <p>COMPROVANTE DE INSCRIÇÃO E DE SITUAÇÃO CADASTRAL</p>
+        </div>
+
+        <div class="cabecalho-documento">
+            <img src="assets/Img/BRASAO 1.png" alt="Brasão da República Federativa do Brasil">
+            <div>
+                <h1>República Federativa do Brasil</h1>
+                <h2>Cadastro Nacional da Pessoa Jurídica</h2>
+            </div>
+        </div>
     </header>
+
+    <main>
+        <form>
+
+            <!-- Dados Cadastrais -->
+            <section aria-labelledby="dados-cadastrais">
+                <h3 id="dados-cadastrais">Dados Cadastrais</h3>
+
+                <fieldset>
+                    <legend>Identificação</legend>
+
+                    <div>
+                        <label for="cnpj">CNPJ</label>
+                        <input type="text" id="cnpj" name="cnpj" placeholder="Digite o CNPJ">
+                    </div>
+
+                    <div>
+                        <label for="data-abertura">Data de Abertura</label>
+                        <input type="text" id="data-abertura" name="data-abertura" readonly>
+                    </div>
+
+                    <div>
+                        <label for="porte">Porte</label>
+                        <input type="text" id="porte" name="porte">
+                    </div>
+
+                    <div>
+                        <label for="nome-empresarial">Nome Empresarial</label>
+                        <input type="text" id="nome-empresarial" name="nome-empresarial">
+                    </div>
+
+                    <div>
+                        <label for="nome-fantasia">Nome Fantasia</label>
+                        <input type="text" id="nome-fantasia" name="nome-fantasia">
+                    </div>
+
+                    <div>
+                        <label for="cnae">CNAE</label>
+                        <input type="text" id="cnae" name="cnae">
+                    </div>
+
+                    <div>
+                        <label for="regime-apuracao">Regime de Apuração</label>
+                        <input type="text" id="regime-apuracao" name="regime-apuracao">
+                    </div>
+
+                    <div>
+                        <label for="natureza-juridica">Cód. Nat. Jur.</label>
+                        <input type="text" id="natureza-juridica" name="natureza-juridica">
+                    </div>
+
+                </fieldset>
+            </section>
+
+            <!-- Endereço -->
+            <section aria-labelledby="endereco">
+                <h3 id="endereco">Endereço</h3>
+
+                <fieldset>
+                    <legend>Localização</legend>
+
+                    <div>
+                        <label for="logradouro">Logradouro</label>
+                        <input type="text" id="logradouro" name="logradouro">
+                    </div>
+
+                    <div>
+                        <label for="numero">Número</label>
+                        <input type="text" id="numero" name="numero">
+                    </div>
+
+                    <div>
+                        <label for="complemento">Complemento</label>
+                        <input type="text" id="complemento" name="complemento">
+                    </div>
+
+                    <div>
+                        <label for="cep">CEP</label>
+                        <input type="text" id="cep" name="cep">
+                    </div>
+
+                    <div>
+                        <label for="bairro">Bairro</label>
+                        <input type="text" id="bairro" name="bairro">
+                    </div>
+
+                    <div>
+                        <label for="municipio">Município</label>
+                        <input type="text" id="municipio" name="municipio">
+                    </div>
+
+                    <div>
+                        <label for="uf">UF</label>
+                        <input type="text" id="uf" name="uf" maxlength="2">
+                    </div>
+
+                </fieldset>
+            </section>
+
+            <!-- Situação Cadastral -->
+            <section aria-labelledby="situacao-cadastral">
+                <h3 id="situacao-cadastral">Situação Cadastral</h3>
+
+                <fieldset>
+                    <legend>Status</legend>
+
+                    <div>
+                        <label for="ente-responsavel">Ente Federativo Responsável</label>
+                        <input type="text" id="ente-responsavel" name="ente-responsavel">
+                    </div>
+
+                    <div>
+                        <label for="situacao">Situação Cadastral</label>
+                        <input type="text" id="situacao" name="situacao">
+                    </div>
+
+                    <div>
+                        <label for="data-situacao">Data da Situação Cadastral</label>
+                        <input type="text" id="data-situacao" name="data-situacao">
+                    </div>
+
+                    <div>
+                        <label for="motivo-situacao">Motivo de Situação Cadastral</label>
+                        <input type="text" id="motivo-situacao" name="motivo-situacao">
+                    </div>
+
+                    <div>
+                        <label for="situacao-especial">Situação Especial</label>
+                        <input type="text" id="situacao-especial" name="situacao-especial">
+                    </div>
+
+                    <div>
+                        <label for="data-situacao-especial">Data da Situação Especial</label>
+                        <input type="text" id="data-situacao-especial" name="data-situacao-especial">
+                    </div>
+
+                </fieldset>
+            </section>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Receita Federal do Brasil</p>
+    </footer>
+
 </body>
 </html>
