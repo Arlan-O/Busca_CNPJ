@@ -41,9 +41,10 @@
                     <legend>Identificação</legend>
 
                     <div class="identificacao">
-                        <div>
+                        <div class="cnpj-input">
                             <label for="cnpj">CNPJ</label>
-                            <input type="text" id="cnpj" name="cnpj" placeholder="Digite o CNPJ">
+                            <input type="text" id="cnpj" name="cnpj" placeholder="Digite o CNPJ"
+                                onblur="getCNPJData(this.value)">
                         </div>
 
                         <div>
@@ -53,33 +54,37 @@
 
                         <div>
                             <label for="porte">Porte</label>
-                            <input type="text" id="porte" name="porte">
+                            <input type="text" id="porte" name="porte" readonly>
                         </div>
                     </div>
                     <div class="nome-empresa">
                         <label for="nome-empresarial">Nome Empresarial</label>
-                        <input type="text" id="nome-empresarial" name="nome-empresarial">
+                        <input type="text" id="nome-empresarial" name="nome-empresarial" readonly>
                     </div>
 
                     <div class="nome-empresa">
                         <label for="nome-fantasia">Nome Fantasia</label>
-                        <input type="text" id="nome-fantasia" name="nome-fantasia">
+                        <input type="text" id="nome-fantasia" name="nome-fantasia" readonly>
                     </div>
+
+                    <div class="textArea">
+                        <label for="cnae">CNAE</label>
+                        <textarea type="text" id="cnae" name="cnae" readonly></textarea>
+                    </div>
+
                     <div class="cnae-apura">
-                        <div>
-                            <label for="cnae">CNAE</label>
-                            <input type="text" id="cnae" name="cnae">
+                        <div class="cod-natureza">
+                            <label for="natureza-juridica">Código Natureza Jurídica</label>
+                            <input type="text" id="natureza-juridica" name="natureza-juridica" readonly>
                         </div>
 
                         <div>
                             <label for="regime-apuracao">Regime de Apuração</label>
-                            <input type="text" id="regime-apuracao" name="regime-apuracao">
+                            <input type="text" id="regime-apuracao" name="regime-apuracao" readonly>
                         </div>
+
                     </div>
-                    <div class="cod-natureza">
-                        <label for="natureza-juridica">Cód. Nat. Jur.</label>
-                        <input type="text" id="natureza-juridica" name="natureza-juridica">
-                    </div>
+
 
                 </fieldset>
             </section>
@@ -93,38 +98,38 @@
                     <div class="end-completo">
                         <div>
                             <label for="logradouro">Logradouro</label>
-                            <input type="text" id="logradouro" name="logradouro">
+                            <input type="text" id="logradouro" name="logradouro" readonly>
                         </div>
 
                         <div>
                             <label for="numero">Número</label>
-                            <input type="text" id="numero" name="numero">
+                            <input type="text" id="numero" name="numero" readonly>
                         </div>
 
                         <div>
                             <label for="complemento">Complemento</label>
-                            <input type="text" id="complemento" name="complemento">
+                            <input type="text" id="complemento" name="complemento" readonly>
                         </div>
                     </div>
                     <div class="end-adicionais">
                         <div>
                             <label for="cep">CEP</label>
-                            <input type="text" id="cep" name="cep">
+                            <input type="text" id="cep" name="cep" readonly>
                         </div>
 
                         <div>
                             <label for="bairro">Bairro</label>
-                            <input type="text" id="bairro" name="bairro">
+                            <input type="text" id="bairro" name="bairro" readonly>
                         </div>
 
                         <div>
                             <label for="municipio">Município</label>
-                            <input type="text" id="municipio" name="municipio">
+                            <input type="text" id="municipio" name="municipio" readonly>
                         </div>
 
                         <div>
                             <label for="uf">UF</label>
-                            <input type="text" id="uf" name="uf" maxlength="2">
+                            <input type="text" id="uf" name="uf" maxlength="2" readonly>
                         </div>
                     </div>
                 </fieldset>
@@ -139,32 +144,32 @@
                     <div class="sit-cad">
                         <div>
                             <label for="ente-responsavel">Ente Federativo Responsável</label>
-                            <input type="text" id="ente-responsavel" name="ente-responsavel">
+                            <input type="text" id="ente-responsavel" name="ente-responsavel" readonly>
                         </div>
 
                         <div>
                             <label for="situacao">Situação Cadastral</label>
-                            <input type="text" id="situacao" name="situacao">
+                            <input type="text" id="situacao" name="situacao" readonly>
                         </div>
 
                         <div>
                             <label for="data-situacao">Data da Situação Cadastral</label>
-                            <input type="text" id="data-situacao" name="data-situacao">
+                            <input type="text" id="data-situacao" name="data-situacao" readonly>
                         </div>
                     </div>
                     <div class="motivo-sit-cad">
                         <label for="motivo-situacao">Motivo de Situação Cadastral</label>
-                        <input type="text" id="motivo-situacao" name="motivo-situacao">
+                        <input type="text" id="motivo-situacao" name="motivo-situacao" readonly>
                     </div>
                     <div class="sit-cad">
                         <div>
                             <label for="situacao-especial">Situação Especial</label>
-                            <input type="text" id="situacao-especial" name="situacao-especial">
+                            <input type="text" id="situacao-especial" name="situacao-especial" readonly>
                         </div>
 
                         <div>
                             <label for="data-situacao-especial">Data da Situação Especial</label>
-                            <input type="text" id="data-situacao-especial" name="data-situacao-especial">
+                            <input type="text" id="data-situacao-especial" name="data-situacao-especial" readonly>
                         </div>
                     </div>
                 </fieldset>
@@ -176,6 +181,7 @@
     <footer>
         <p>&copy; 2026 - Receita Federal do Brasil - Desenvolvido por Arlan de Oliveira</p>
     </footer>
+    <script src="apiService.js"></script>
 
 </body>
 
