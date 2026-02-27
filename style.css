@@ -93,6 +93,10 @@ form {
   font-size: 14px;
 }
 
+.cnpj-input input{
+ background-color: #ffff; ;
+}
+
 .nome-empresa {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -106,6 +110,15 @@ form {
   background: #e6e6e6;
   border-radius: 3px;
   font-size: 14px;
+}
+
+.textArea textarea{
+  width: 880px;
+  height: auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: sans-serif;
 }
 
 .cnae-apura {
